@@ -53,4 +53,7 @@
 | S3 S4 | Lucas | evals folder |
 | S4 | Ariane | 04_architecture.md and prototype source code |
 | S5 S6 | Lucas | 05_metrics.md & evals/README.md |
-| S5 | Mathilde | Business metrics (05_metrics.md §4) and the dispute-rate stop band |
+| S5 | Mathilde | Business metrics (05_metrics.md §1-3) and the dispute-rate stop band |
+| S5 | Laura | Business metrics (05_metrics.md §4 & §5)|
+| S6 | Laura | 06_07_experiments_operations.md |
+| S7 | Laura | 06_07_experiments_operations.md |
