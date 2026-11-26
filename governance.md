@@ -14,8 +14,8 @@
 | 6 | **The people it cannot serve:** what happens to them? |Contracts with unreadable/un-OCRed scans or novel multi-act clauses that fail extraction are flagged in Amber/Red (cwr_split_warnings) and completed manually in seconds using the built-in **1-click SACEM Statutory Presets (⚡ Cession 50/50, ⚡ Équilibrer solde à 100%, ⚡ Synchro LAI 11%).** | |
 
 ## Session 2 — the cost of error
-- Which cost-of-error line is a **legal or reputational** risk, not just money? …
-- Who in the company **owns** that risk? …
+- Which cost-of-error line is a **legal or reputational** risk, not just money? **A wrong split or a wrong IPI validated and sent to SACEM in the `.V21` file.** SACEM then pays the royalties to the wrong right holder until the declaration is corrected. The publisher must account for and justify these amounts (CPI art. L132-13 and L132-14), so the error becomes a dispute with a songwriter or a co-publisher, not just ~€25 of rework. An arithmetic error (sum ≠ 100.00 %) is blocked by `validate_work_cwr`; a wrong person or a wrong IPI is not, so the human checkpoint (⊘) is the only barrier.
+- Who in the company **owns** that risk? **The publisher's Head of Copyright & Legal Ops**, who validates and sends every declaration. On the Korom side, the Tech Lead owns the deterministic CWR gate and the Override Switch (⏻). *To check:* how long SACEM takes to correct a wrong declaration and recover the royalties paid.
 
 ## Session 3 — data (to come)
 ## Session 4 — human-in-the-loop points and the override switch (to come)
@@ -35,3 +35,4 @@
 | S1 | Ariane | Initialisation of governance.md and 00_pitch.md|
 | S1 | Emma | 01_problem_statement.md |
 | S1 | Laura | EU AI Act & GDPR in governance.md |
+| S2 | Mathilde | Cost of error: legal / reputational risk line and its owner |
