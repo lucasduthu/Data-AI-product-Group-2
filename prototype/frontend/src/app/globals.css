@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Micro';
+  src: url('/fonts/Micro-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Micro';
+  src: url('/fonts/Micro-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Micro';
+  src: url('/fonts/Micro-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --primary: 253 63% 63%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 254 40% 96.5%;
+    --secondary-foreground: 253 51% 25%;
+    --muted: 254 30% 96.5%;
+    --muted-foreground: 240 10% 46%;
+    --accent: 254 100% 96%;
+    --accent-foreground: 253 51% 45%;
+    --border: 240 15% 91%;
+    --input: 240 15% 91%;
+    --ring: 253 63% 63%;
+    --radius: 0.5rem;
+  }
+
+  /* Échelle typographique haute densité B2B SaaS (optimisée pour catalogues > 10 000 œuvres) */
+  html {
+    font-size: 14px;
+  }
+
+  @media (min-width: 1536px) {
+    html {
+      font-size: 14.5px;
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased leading-normal;
+  }
+}

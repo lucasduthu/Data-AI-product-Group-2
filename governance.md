@@ -17,8 +17,20 @@
 - Which cost-of-error line is a **legal or reputational** risk, not just money? **A wrong split or a wrong IPI validated and sent to SACEM in the `.V21` file.** SACEM then pays the royalties to the wrong right holder until the declaration is corrected. The publisher must account for and justify these amounts (CPI art. L132-13 and L132-14), so the error becomes a dispute with a songwriter or a co-publisher, not just ~€25 of rework. An arithmetic error (sum ≠ 100.00 %) is blocked by `validate_work_cwr`; a wrong person or a wrong IPI is not, so the human checkpoint (⊘) is the only barrier.
 - Who in the company **owns** that risk? **The publisher's Head of Copyright & Legal Ops**, who validates and sends every declaration. On the Korom side, the Tech Lead owns the deterministic CWR gate and the Override Switch (⏻). *To check:* how long SACEM takes to correct a wrong declaration and recover the royalties paid.
 
-## Session 3 — data (to come)
-## Session 4 — human-in-the-loop points and the override switch (to come)
+## Session 3 — data
+1. **Provenance:** Synthetic & anonymized French/English publishing contracts modeled on CSDEM/SACEM standards and real industry layouts (Cession d'édition, Co-édition, Kaptain Music / TF1 audiovisual bundles, Lettre-Accord Artiste-Interprète).
+2. **Volume & Labels:** 50 labelled cases in `evals/eval_set_v0.csv` (growing to 100 in S5), manually verified by two graders.
+3. **Coverage by Segment:** Covers French (`FR`) and English (`EN`) contracts, single-song and multi-work tables (up to 37 works), and unbalanced adversarial contracts.
+4. **Rights & Privacy:** No real confidential artist bank accounts (IBANs) or unreleased commercial PDFs are sent to external training pipelines; OpenRouter calls use zero-data-retention endpoints with SHA-256 local caching.
+5. **Leakage Prevention:** `evals/eval_set_v0.csv` is strictly separated from `SYSTEM_PROMPT` examples and regex rules.
+6. **Freshness & Retention:** Contract records and `AuditLog` entries are retained for the statutory duration of copyright administration (5 years minimum for tax/accounting, 70 years for catalog title registry), with strict multi-entity tenant isolation (`entity_id` / `X-Entity-Id`).
+
+## Session 4 — human-in-the-loop points and the override switch
+- **Human Checkpoints (`⊘`):**
+  1. **Checkpoint `⊘1` (Approval — `L2`):** Mandatory human validation of extracted contract fields, verbatim quotes, and 100.00% split gauges (`POST /api/v1/contracts/{id}/validate`) before works are created in the catalog.
+  2. **Checkpoint `⊘2` (Abstention Gate — `L4`):** `validate_work_cwr` automatically abstains from serializing any work with `DEP != 100.00%`, `DRM != 100.00%`, `Pub DEP > 50.00%`, or invalid IPI into `.V21` CWR files.
+- **Override Switch (`⏻`):** Owned by the **Tech Lead / On-Call Engineer** (and exposed in the UI navbar for the Copyright Manager). Toggles `WorkspaceSettings.openrouter_model` to `"deterministic"` via `POST /api/v1/settings/override-switch`. Tested on **17 November 2026**.
+
 ## Session 5 — counter-metrics and the segments we report
 - **Counter-metrics:** rubber-stamping (contracts approved in < 30 s or with 0 edits while the eval-set still shows errors) and the share of contracts pushed back to manual entry. If the primary rises while these rise too, the gain is fake.
 - **Segments we report:** contract type, catalogue size, document quality (native / scanned), language, number of right holders per work — pre-registered in `05_metrics.md`, never added after the results.
@@ -38,3 +50,4 @@
 | S2 | Mathilde | Cost of error: legal / reputational risk line and its owner |
 | S3 | Emma | 03_product_brief.md |
 | S3 S4 | Lucas | evals folder |
+| S4 | Ariane | 04_architecture.md and prototype source code |

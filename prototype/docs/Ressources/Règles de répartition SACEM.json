@@ -1,0 +1,261 @@
+{
+ "_meta": {
+  "version": "2026-11-09",
+  "source": "Statuts et Reglement general SACEM 2026 https://www.societe.sacem.fr/docs/Statuts_FR_2026.pdf",
+  "note": "Parts en fractions de 1. Verifier chaque annee."
+ },
+ "DEP": {
+  "edited": {
+   "A": 0.3333333,
+   "C": 0.3333333,
+   "E": 0.3333333,
+   "ref": "Statuts art.9, RG art.57"
+  },
+  "unedited": {
+   "A": 0.5,
+   "C": 0.5,
+   "ref": "RG art.58"
+  },
+  "lyrics_only_or_music_only": "le createur unique prend A+C (RG art.59)",
+  "foreign_subpublished_max_E": 0.5,
+  "adaptation_lyrics_music_edited": {
+   "A": 0.1666667,
+   "AD": 0.1666667,
+   "C": 0.3333333,
+   "E": 0.3333333
+  },
+  "adaptation_lyrics_music_unedited": {
+   "A": 0.3333333,
+   "AD": 0.1666667,
+   "C": 0.5
+  },
+  "adaptation_text_only_edited": {
+   "A": 0.5,
+   "AD": 0.1666667,
+   "E": 0.3333333
+  },
+  "adaptation_text_only_unedited": {
+   "A": 0.8333333,
+   "AD": 0.1666667
+  },
+  "arrangement_music_only_edited": {
+   "C": 0.5833333,
+   "AR": 0.0833333,
+   "E": 0.3333333
+  },
+  "arrangement_music_only_unedited": {
+   "C": 0.9166667,
+   "AR": 0.0833333
+  },
+  "arrangement_music_only_film_symph_edited": {
+   "C": 0.5,
+   "AR": 0.1666667,
+   "E": 0.3333333
+  },
+  "arrangement_music_only_film_symph_unedited": {
+   "C": 0.8333333,
+   "AR": 0.1666667
+  },
+  "arrangement_lyrics_music_edited": {
+   "A": 0.2916667,
+   "C": 0.2916667,
+   "AR": 0.0833333,
+   "E": 0.3333333
+  },
+  "arrangement_lyrics_music_unedited": {
+   "A": 0.4583333,
+   "C": 0.4583333,
+   "AR": 0.0833333
+  },
+  "arrangement_lyrics_music_film_symph_edited": {
+   "A": 0.25,
+   "C": 0.25,
+   "AR": 0.1666667,
+   "E": 0.3333333
+  },
+  "arrangement_lyrics_music_film_symph_unedited": {
+   "A": 0.4166667,
+   "C": 0.4166667,
+   "AR": 0.1666667
+  },
+  "adapt_and_arr_edited": {
+   "A": 0.125,
+   "AD": 0.1666667,
+   "C": 0.2916667,
+   "AR": 0.0833333,
+   "E": 0.3333333
+  },
+  "adapt_and_arr_unedited_symph": {
+   "A": 0.25,
+   "AD": 0.1666667,
+   "C": 0.4166667,
+   "AR": 0.1666667
+  },
+  "adapt_and_arr_unedited_nonsymph": {
+   "A": 0.2916667,
+   "AD": 0.1666667,
+   "C": 0.4583333,
+   "AR": 0.0833333
+  }
+ },
+ "DR_art76": {
+  "lm_edited": {
+   "A": 25,
+   "C": 25,
+   "E": 50
+  },
+  "lm_edited_arr": {
+   "A": 21.875,
+   "C": 21.875,
+   "E": 50,
+   "AR": 6.25
+  },
+  "lm_edited_adapt": {
+   "A": 18.75,
+   "C": 18.75,
+   "E": 50,
+   "AD": 12.5
+  },
+  "lm_edited_arr_adapt": {
+   "A": 15.625,
+   "C": 15.625,
+   "E": 50,
+   "AR": 6.25,
+   "AD": 12.5
+  },
+  "lm_unedited": {
+   "A": 50,
+   "C": 50
+  },
+  "lm_unedited_arr": {
+   "A": 46.875,
+   "C": 46.875,
+   "AR": 6.25
+  },
+  "lm_unedited_adapt": {
+   "A": 43.75,
+   "C": 43.75,
+   "AD": 12.5
+  },
+  "lm_unedited_arr_adapt": {
+   "A": 40.625,
+   "C": 40.625,
+   "AR": 6.25,
+   "AD": 12.5
+  },
+  "m_edited": {
+   "C": 50,
+   "E": 50
+  },
+  "m_edited_arr": {
+   "C": 43.75,
+   "E": 50,
+   "AR": 6.25
+  },
+  "m_unedited": {
+   "C": 100
+  },
+  "m_unedited_arr": {
+   "C": 93.75,
+   "AR": 6.25
+  },
+  "l_edited": {
+   "A": 50,
+   "E": 50
+  },
+  "l_edited_adapt": {
+   "A": 37.5,
+   "E": 50,
+   "AD": 12.5
+  },
+  "l_unedited": {
+   "A": 100
+  },
+  "l_unedited_adapt": {
+   "A": 87.5,
+   "AD": 12.5
+  },
+  "film_symph_arranger_pct": 12.5,
+  "rule": "Si la cle phono contractuelle est plus favorable aux createurs, elle s'applique (Statuts art.9)"
+ },
+ "DR_art77_domaine_public": {
+  "lm_arr_edited": {
+   "E": 50,
+   "AR": 50
+  },
+  "lm_adapt_edited": {
+   "E": 50,
+   "AD": 50
+  },
+  "lm_arr_adapt_edited": {
+   "E": 50,
+   "AR": 25,
+   "AD": 25
+  },
+  "lm_arr_unedited": {
+   "AR": 100
+  },
+  "lm_adapt_unedited": {
+   "AD": 100
+  },
+  "lm_arr_adapt_unedited": {
+   "AR": 50,
+   "AD": 50
+  },
+  "m_arr_edited": {
+   "E": 50,
+   "AR": 50
+  },
+  "m_arr_unedited": {
+   "AR": 100
+  },
+  "m_add_lyrics_edited": {
+   "A": 50,
+   "E": 50
+  },
+  "m_add_lyrics_unedited": {
+   "A": 100
+  },
+  "l_adapt_edited": {
+   "E": 50,
+   "AD": 50
+  },
+  "l_adapt_unedited": {
+   "AD": 100
+  },
+  "l_add_music_edited": {
+   "C": 50,
+   "E": 50
+  },
+  "l_add_music_unedited": {
+   "C": 100
+  }
+ },
+ "PHONO": {
+  "type": "contractuel",
+  "constraint": "total 100%, conforme au contrat de cession et d'edition",
+  "subpublisher_max": "jusqu'a 100% si autorise ou avance"
+ },
+ "intra_category": {
+  "default": "parts egales en DEP et DR",
+  "option": "suivre le partage phono; editeurs: 3 modes, oeuvres declarees depuis 2019-01-01"
+ },
+ "delais": {
+  "declaration_avant_paiement_jours": 65,
+  "rappels_ans": 5,
+  "non_reclames_ans": 5,
+  "cue_sheet_mois_apres_diffusion": 1,
+  "preference_reponse_mois": 3,
+  "preference_max_oeuvres": 5,
+  "preference_max_ans": 5,
+  "reddition_legale_actuelle": "annuelle",
+  "reddition_projet_loi": "semestrielle, sous 3 mois"
+ },
+ "territoires_sacem": [
+  "France metropolitaine",
+  "Outre-mer",
+  "Monaco",
+  "Luxembourg",
+  "Liban"
+ ]
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" fill="none">
+  <defs>
+    <linearGradient id="koromFullGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8E77E5" />
+      <stop offset="100%" stop-color="#745DCA" />
+    </linearGradient>
+  </defs>
+  <!-- K mark icon -->
+  <rect x="4" y="16" width="48" height="48" rx="14" fill="url(#koromFullGrad)" />
+  <text x="28" y="50" font-family="'Micro', sans-serif" font-weight="700" font-size="28" fill="#EFEAFF" text-anchor="middle">K</text>
+  
+  <!-- Wordmark -->
+  <text x="64" y="44" font-family="'Micro', sans-serif" font-weight="700" font-size="32" fill="#8067DC" letter-spacing="-0.5">Korom</text>
+  
+  <!-- Line separator -->
+  <line x1="64" y1="52" x2="260" y2="52" stroke="#745DCA" stroke-width="1.5" stroke-opacity="0.5" />
+  
+  <!-- Subtitle -->
+  <text x="64" y="66" font-family="Helvetica, 'Segoe UI', sans-serif" font-style="italic" font-weight="400" font-size="12" fill="#745DCA" letter-spacing="0.5">Copyrights &amp; Royalties</text>
+</svg>

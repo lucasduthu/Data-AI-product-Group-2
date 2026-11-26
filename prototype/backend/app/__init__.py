@@ -1,0 +1,1 @@
+"""RightsCopilot Backend Application."""
