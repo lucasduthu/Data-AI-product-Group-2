@@ -62,3 +62,4 @@
 | S7 | Laura | 06_07_experiments_operations.md |
 | S8 | Mathilde | 08_launch_memo.md §1-2 (recommendation, evidence) and the launch decision line |
 | S8 | Laura | Finalisation of 08_launch_memo.md §3-4|
+| S8 | Ariane | Finalisation of Project, README.md and spec.md |
