@@ -6,7 +6,7 @@
 ## Session 1 — the six questions
 | # | Question | Our answer (provisional) | To check with |
 |---|---|---|---|
-| 1 | **EU AI Act:** which risk tier is our agent in, and why? (minimal · limited — transparency: tell the user it is an AI · high-risk · prohibited) | | |
+| 1 | **EU AI Act:** which risk tier is our agent in, and why? (minimal · limited — transparency: tell the user it is an AI · high-risk · prohibited) |The system is an internal B2B back-office productivity copilot for music publishing contract data extraction and CISAC CWR formatting. It does not profile natural persons for credit, employment, or law enforcement. Users are explicitly informed when viewing AI-extracted contract fields (ConfidenceBadge + Human-in-the-loop L2 badge). | |
 | 2 | **Data:** whose data does it use, and on what legal basis? (GDPR art. 6; what the B2B contract allows) | | |
 | 3 | **Accountability:** who is accountable when it is wrong — and where is the human? | | |
 | 4 | **Never:** what must it never do? (our first guardrail) | | |
