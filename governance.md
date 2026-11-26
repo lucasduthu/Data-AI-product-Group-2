@@ -37,3 +37,4 @@
 | S1 | Laura | EU AI Act & GDPR in governance.md |
 | S2 | Mathilde | Cost of error: legal / reputational risk line and its owner |
 | S3 | Emma | 03_product_brief.md |
+| S3 S4 | Lucas | evals folder |
