@@ -1,6 +1,6 @@
 # 05 — Metrics & Evaluation Plan · Korom Contract-to-CWR Copilot
 
-> All numbers trace directly to [`02_sizing.xlsx`](file:///Users/ariane/Desktop/Obsidian%20vault/98%20%F0%9F%8E%93%20Albert%20School%20-%20class%20materials/MSA-DAT07-04_Data%20&%20AI%20Product%20-%20From%20Diagnosis%20to%20Delivery/korom-ai-product/02_sizing.xlsx) and [`evals/report_v0.md`](file:///Users/ariane/Desktop/Obsidian%20vault/98%20%F0%9F%8E%93%20Albert%20School%20-%20class%20materials/MSA-DAT07-04_Data%20&%20AI%20Product%20-%20From%20Diagnosis%20to%20Delivery/korom-ai-product/evals/report_v0.md).
+> All numbers trace directly to [`02_sizing.xlsx`](02_sizing.xlsx) and [`evals/report_v0.md`](evals/report_v0.md).
 
 ---
 
@@ -55,19 +55,19 @@
        │          └──▶ Business Metric 2: First-Pass SACEM CWR Acceptance Rate moves from 85.0% to ≥ 98.0% (4-week lag via SACEM .ACK)
        │
        └──▶ [Counter-Metric Check: Verbatim citations + Excel .xlsx visibility sheet]
-                  └──▶ Business Metric 3 (Non-Effect Band): Post-Registration Songwriter Split Dispute Rate remains unchanged at 0.0% (+0.0% tolerance over 90 days)
+                  └──▶ Business Metric 3 (Non-Effect Band): Post-Registration Songwriter Split Dispute Rate remains unchanged at its < 0.5% baseline (± 0.2 pt band over 90 days; stop above 0.7%)
 ```
 
 | # | Business Metric | Baseline (`02_sizing.xlsx`) | Expected Effect (from `report_v0.md`) | Read Lag | Read Date | Hypothesis Tested |
 |---|---|---|---|---|---|---|
 | **BM1** | **Median Contract-to-CWR Processing Time** | `30.0 min / contract` | **$\le 5.0\text{ min / contract}$** (observed `2.4 min` in prototype; `-83%` to `-92%`) | Immediate | Week 2 of pilot | H1 (Time savings / Flip point) |
 | **BM2** | **First-Pass SACEM CWR Acceptance Rate (`ACK`)** | `85.0%` (`15%` rejected in legacy sample) | **$\ge 98.0\%$** (`+13 pts`, driven by the 100% deterministic CWR gate) | 2–4 weeks | Week 4 of pilot | H2 (Zero-error statutory compliance) |
-| **BM3** | **Songwriter / Co-Publisher Split Dispute Rate** *(Non-Effect Band)* | `< 0.5%` | **Unchanged within $\pm 0.2\%$ band** (speed does not degrade legal accuracy) | 90 days | Month 3 post-launch | H3 (Trust & Groundedness via `.xlsx` + quotes) |
+| **BM3** | **Songwriter / Co-Publisher Split Dispute Rate** *(Non-Effect Band)* | `< 0.5%` | **Unchanged within a ± 0.2 pt band** (speed does not degrade legal accuracy); **stop band:** > 0.7% of registered works disputed over 90 days → back to field-by-field review (`⏻`) | 90 days | Month 3 post-launch | H3 (Trust & Groundedness via `.xlsx` + quotes) |
 
 ---
 
 ## §5 Make the Judge Trustworthy (Human–Human & Human–Judge Agreement)
 
-Full grading rubric, prompt, and 50-to-100 case evaluation details are in [`evals/README.md`](file:///Users/ariane/Desktop/Obsidian%20vault/98%20%F0%9F%8E%93%20Albert%20School%20-%20class%20materials/MSA-DAT07-04_Data%20&%20AI%20Product%20-%20From%20Diagnosis%20to%20Delivery/korom-ai-product/evals/README.md) and [`evals/judge_prompt.txt`](file:///Users/ariane/Desktop/Obsidian%20vault/98%20%F0%9F%8E%93%20Albert%20School%20-%20class%20materials/MSA-DAT07-04_Data%20&%20AI%20Product%20-%20From%20Diagnosis%20to%20Delivery/korom-ai-product/evals/judge_prompt.txt).
+Full grading rubric, prompt, and 50-to-100 case evaluation details are in [`evals/README.md`](evals/README.md) and [`evals/judge_prompt.txt`](evals/judge_prompt.txt).
 - **Human–Human Agreement Rate (on 30 stratified contracts):** **93.3% (28 / 30)** — Cohen's $\kappa = 0.84$.
 - **Human–Judge Agreement Rate (LLM Judge vs. Consensus Human on the same 30 cases):** **90.0% (27 / 30)** after one rubric refinement (clarifying that `sync_share_pct = 0.00` is a **PASS** when synchronization is not stipulated in a French SACEM cession contract).
