@@ -34,6 +34,7 @@
 ## Session 5 — counter-metrics and the segments we report
 - **Counter-metrics:** rubber-stamping (contracts approved in < 30 s or with 0 edits while the eval-set still shows errors) and the share of contracts pushed back to manual entry. If the primary rises while these rise too, the gain is fake.
 - **Segments we report:** contract type, catalogue size, document quality (native / scanned), language, number of right holders per work — pre-registered in `05_metrics.md`, never added after the results.
+- **Business metrics and their stop band (Mathilde):** handling time per contract (30 → ≤ 5 min), first-pass SACEM acceptance (85 % → ≥ 98 %), and one non-effect: the songwriter / co-publisher split dispute rate stays at its < 0.5 % baseline (± 0.2 pt). Above 0.7 % of registered works disputed over 90 days, the publisher's Head of Copyright & Legal Ops is alerted and contracts go back to field-by-field review (⏻), whatever the time saved (`05_metrics.md` §4).
 ## Session 6 — protected segments and the harm threshold that stops an experiment
 - **Protected segments:** small publishers with scanned contracts and contracts with 4+ right holders (highest risk of a wrong payment). A guardrail breach in one of them switches that segment back to manual entry, whatever the average says.
 - **Harm threshold that stops the A/B at once:** one work reaching SACEM with a split ≠ 100.00 %, or 2+ wrong-IPI declarations in a week, or > 20 % of contracts approved in under 30 s (`06_07_experiments_operations.md`, A7).
@@ -52,3 +53,4 @@
 | S3 S4 | Lucas | evals folder |
 | S4 | Ariane | 04_architecture.md and prototype source code |
 | S5 S6 | Lucas | 05_metrics.md & evals/README.md |
+| S5 | Mathilde | Business metrics (05_metrics.md §4) and the dispute-rate stop band |
