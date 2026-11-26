@@ -33,3 +33,5 @@
 | Session | Who | What was added |
 |---|---|---|
 | S1 | Ariane | Initialisation of governance.md |
+| S1 | Emma | 01_problem_statement.md |
+
