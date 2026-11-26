@@ -32,6 +32,6 @@
 
 | Session | Who | What was added |
 |---|---|---|
-| S1 | Ariane | Initialisation of governance.md |
+| S1 | Ariane | Initialisation of governance.md and 00_pitch.md|
 | S1 | Emma | 01_problem_statement.md |
-
+| S1 | Laura | EU AI Act & GDPR in governance.md |
