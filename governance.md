@@ -42,6 +42,9 @@
 - **Accountable owner:** Ariane (product); on the customer side, the publisher's copyright / legal director signs every declaration.
 - **Rollback authority:** Laura or Ariane can press the Override Switch without asking anyone (< 2 min); the customer's copyright manager can press it for their own catalogue.
 - **Incident path:** P1 (wrong declaration sent) → switch, correction filed with SACEM within 24 h, root cause in 5 days; P2–P4 in `06_07_experiments_operations.md`, B5.
+## Session 8 — launch decision
+- **Launch decision (Mathilde):** CONDITIONAL GO to production (`08_launch_memo.md` §1), on one condition: the mandatory human checkpoint (⊘) stays active on 100 % of uploaded contracts. No work reaches the catalogue or a `.V21` file without a named person validating it.
+- **Who signs it:** the publisher's Head of Copyright & Legal Ops, with Korom's AI Product Manager, on the evidence in §2 (88 % un-edited extraction on 50 cases, 12/12 split errors blocked, 30 → 2.4 min per contract). If a later eval falls below the 60 % flip point, the decision goes back to NO-GO.
 
 | Session | Who | What was added |
 |---|---|---|
@@ -57,3 +60,4 @@
 | S5 | Laura | Business metrics (05_metrics.md §4 & §5)|
 | S6 | Laura | 06_07_experiments_operations.md |
 | S7 | Laura | 06_07_experiments_operations.md |
+| S8 | Mathilde | 08_launch_memo.md §1-2 (recommendation, evidence) and the launch decision line |
