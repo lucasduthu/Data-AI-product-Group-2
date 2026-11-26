@@ -51,3 +51,4 @@
 | S3 | Emma | 03_product_brief.md |
 | S3 S4 | Lucas | evals folder |
 | S4 | Ariane | 04_architecture.md and prototype source code |
+| S5 S6 | Lucas | 05_metrics.md & evals/README.md |
